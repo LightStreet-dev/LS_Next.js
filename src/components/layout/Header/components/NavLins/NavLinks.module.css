@@ -1,0 +1,15 @@
+.navigation{
+    display: flex;
+    gap: 16px;
+    ;
+}
+.navItem{
+    font-size: var(--textFontSize);
+}
+
+@media (min-width: 1024px) {
+ .navigation{
+    display: flex;
+    gap: 58px;
+}
+}

@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+  .featuresList {
+    display: flex;
+    gap: 13px;
+    
+  }
+  .featurIteam {
+    background-color: rgba(226, 226, 226, 0.4);
+    width: 119px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  .featurCount {
+    font-family: var(--featuresFortFamily);
+     font-weight: 700;                 /* жирний */
+  font-style: normal;               /* шрифт звичайний, Bold не викорисовується тут */
+  font-size: 32px;                  /* розмір шрифту */
+  line-height: 24px;                /* висота рядка */
+  letter-spacing: -0.08em;       
+  }
+  .featurtext{
+    font-size: 12px;
+    width: 100%;
+  }
+  .rating{
+    font-size: 10px;
+  }
+  .ratingIcon{
+   width: 22px;
+  height: 22px;
+  display: inline-block;
+  }
+  .ratingWraper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+ .featurIteam{
+    width: 130px;
+    padding: 20px;
+ }
+.featurCount{
+    font-size: 36px;
+}
+
+}

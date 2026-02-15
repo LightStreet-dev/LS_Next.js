@@ -1,0 +1,25 @@
+{
+  "formTitle": "Skontaktuj się z nami",
+  "formPlaseholders": {
+    "name": "Imię",
+    "company": "Firma",
+    "telefon": "Telefon",
+    "email": "E-mail",
+    "text": "Wiadomość",
+    "agree": "  Wyrażam zgodę na przetwarzanie moich danych osobowych",
+    "shortAgree":"Wyrażam zgodę na przetwarzanie danych."
+  },
+  "errors": {
+    "error": "To pole jest wymagane",
+    "min": "Minimum 3 litery",
+    "max": "Tekst nie może zawierać więcej niż 20 liter",
+    "maxText": "Osiągnięto maksymalną dozwoloną liczbę liter",
+    "mail": "Nieprawidłowy format adresu e-mail",
+    "onlyLetters": "Pole powinno zawierać tylko litery",
+    "phone": "Proszę wprowadzić poprawny numer telefonu"
+  },
+  "button": {
+    "send": "Wyślij",
+    "sending": "Wysyłanie…"
+  }
+}

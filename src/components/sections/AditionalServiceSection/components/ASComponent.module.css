@@ -1,0 +1,97 @@
+.asIcon {
+  width: 24px;
+  height: 24px;
+}
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--mainBackground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AScontainer {
+  width: 100%;
+  max-height: fit-content;
+  border-radius: 24px;
+  background-color: #060f18;
+  padding: 24px 48px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+  justify-content: space-between;
+}
+.AStitle {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+.AStext {
+  font-size: var(--textFontSize);
+  text-align: start;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.show {
+  display: blok;
+  max-height: 350px; /* або більше, під текст */
+  opacity: 1;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .asIcon {
+    width: 25px;
+    height: 25px;
+  }
+  .iconWrapper {
+    width: 72px;
+    height: 72px;
+  }
+  .AStitle {
+    font-size: 24px;
+  }
+  .AScontainer {
+    width: 350px;
+    
+    padding: 32px 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .AScontainer {
+    width: 280px;
+    padding: 20px 40px;
+  }
+
+  .AStitle {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1224px) {
+  .AScontainer {
+    width: 100%;
+    max-width: 350px;
+    padding: 24px 48px;
+  }
+  .AStitle {
+    font-size: 24px;
+  }
+}

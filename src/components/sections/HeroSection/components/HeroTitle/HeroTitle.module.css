@@ -1,0 +1,107 @@
+.heroTitle {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.heroText {
+  font-size: 14px;
+  max-width: 320px;
+  text-align: start;
+}
+
+.heroTitleContent1,
+.heroTitleContent2,
+.heroTitleContent3 {
+  position: relative; /* щоб ::after позиціювався відносно слова */
+  display: inline-block;
+  z-index: 1; /* основний текст зверху */
+}
+
+.heroTitleContent1::after,
+.heroTitleContent2::after,
+.heroTitleContent3::after {
+  content: attr(data-first-letter);
+  position: absolute;
+  top: -7.5%;
+  left: 1%;
+font-size: 110%;
+  color: transparent;
+  -webkit-text-stroke: 0.5px rgba(152, 219, 255, 0.5); /* тонкий контур */
+  z-index: -1; /* позаду всього слова */
+  pointer-events: none;
+}
+
+
+
+
+
+@media (min-width: 370px) {
+  .heroTitle {
+    font-size: 48px;
+  }
+  .heroTitleContent2 {
+    margin-left: 20px;
+  }
+  .heroTitleContent3 {
+    margin-left: clamp(85px, 10vw, 96px);
+
+  }
+}
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 64px;
+    align-items: center;
+    max-width: 375px;
+
+  }
+  .heroTitleContent2 {
+    margin-left: 0;
+  }
+  .heroTitleContent3 {
+    margin-left: 0px;
+
+  }
+  .heroText {
+  font-size: 16px;
+  max-width: 335px;
+  text-align: start;
+}
+}
+@media (min-width: 1024px) {
+  .heroTitle {
+    font-size: 75px;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+     align-items: start;
+     gap: 10px;
+
+  }
+  .heroText {
+  font-size: 18px;
+    max-width: 400px;
+}}
+
+
+@media (min-width: 1560px) {
+  .heroTitle {
+    font-size: 96px;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+     align-items: start;
+     gap: 10px;
+
+  }
+  .heroText {
+  font-size: 20px;
+    max-width: 475px;
+}}
+
+

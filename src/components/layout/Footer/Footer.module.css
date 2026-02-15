@@ -1,0 +1,151 @@
+.footerSection{
+  background-color: #E1EEFC;
+}
+
+.footerWrapper {
+  padding: 50px 0 ;
+
+  display: flex;
+  flex-direction: column;
+}
+.footerNavWrap {
+  margin-bottom: 50px;
+}
+.footerNav {
+  display: flex;
+  justify-content: start;
+  gap: 16px;
+  font-size: var(--footerNavSize);
+  color: var(--footerNavColor);
+}
+
+.footerText {
+  font-size: 38px;
+  color: #130f20;
+  margin-bottom: 50px;
+  font-weight: 400;
+  letter-spacing: -0.1em;
+  text-align: center;
+}
+.markText {
+  color: #0a6cb5;
+}
+.footerSocWrap {
+  padding-bottom: 50px;
+}
+.footerSocIcon {
+  width: 34px;
+  height: 34px;
+  fill: #0a6cb5;
+  color: var(--iconsColor);
+  display: block;
+  transition: fill 0.5s ease;
+}
+
+.footerSocIcon:hover {
+  
+  fill: #1984d6;
+ 
+  
+}
+
+.footerStyleList {
+  gap: 12px;
+}
+.footerInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.righsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ownerInfo {
+  color: var(--footerNavColor);
+  max-width: 143px;
+  font-size: 12px;
+  text-align: start;
+}
+.privatePolice {
+  color: var(--footerNavColor);
+  font-size: 10px;
+  text-align: end;
+  cursor: pointer;
+}
+.rulesInfo {
+  color: var(--secondContentColor);
+  font-size: 12px;
+  text-align: end;
+}
+
+@media (min-width: 420px) {
+  .footerText {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 769px) {
+  .footerWrapper {
+    padding: 65px 0;
+  }
+  .footerNavWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+
+  .footerText {
+    font-size: 64px;
+  }
+  .ownerInfo {
+
+    max-width: 268px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerNavWrap {
+    
+    margin-bottom: 60px;
+  }
+  .footerWrapper {
+    padding: 60px 0;
+  }
+  .footerText {
+    font-size: 100px;
+  }
+  .ownerInfo {
+    font-size: var(--textFontSize);
+
+  }
+  .rulesInfo {
+    font-size: var(--textFontSize);
+  }
+  .privatePolice {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1550px) {
+  .footerNavWrap {
+    
+    margin-bottom: 100px;
+  }
+  .footerWrapper {
+    padding: 100px 0;
+  }
+  .footerText {
+    font-size: 110px;
+  }
+  .ownerInfo {
+    font-size: var(--textFontSize);
+
+  }
+  .rulesInfo {
+    font-size: var(--textFontSize);
+  }
+  .privatePolice {
+    font-size: 12px;
+  }
+}

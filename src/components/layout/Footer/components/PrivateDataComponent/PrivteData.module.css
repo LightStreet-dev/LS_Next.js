@@ -1,0 +1,73 @@
+/* ================================
+   PRIVATE OVERLAY (MODAL) 
+   ПРОЗОРИЙ БЛЮР
+================================ */
+
+.privateOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* full screen */
+
+  /* прозорий фон для backdrop-filter */
+  background: rgba(0, 0, 0, 0.3); /* чистий блюр без кольору */
+  backdrop-filter: blur(8px);
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  z-index: 1000;
+
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.privateOverlayActive {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.privateContent {
+  display: flex;
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  backdrop-filter: blur(2px); /* optional: легкий внутрішній блюр */
+}
+
+.closeBtn {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background: none;
+  border: none;
+  color: var(--mainContentColor);
+  cursor: pointer;
+}
+
+.provateText {
+  font-size: var(--textFontSize);
+  margin-top: 50px;
+  text-align: start;
+  white-space: pre-line; /* перенос рядків */
+  text-indent: 1.5em;    /* відступ абзацу */
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (min-width: 768px) {
+  .privateContent {
+    max-width: 80%;
+    max-height: 80vh;
+  }
+}

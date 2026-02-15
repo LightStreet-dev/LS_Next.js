@@ -1,0 +1,183 @@
+{
+  "header": {
+    "about": "O nas",
+    "services": "Oferta",
+    "contact": "Kontakt",
+    "contactButton": " Konsultacja"
+  },
+  "hero": {
+    "heroTitle1": "Strony",
+    "heroTitle2": "internetowe",
+    "heroTitle3": "pod klucz",
+    "heroText": "Od pomysłu po wdrożenie — Tworzymy dopasowany UI/UX, identyfikacja wizualna i materiały webowe dla Twojego produktu.",
+    "heroBtn": "Nasze realizacje",
+    "team": {
+      "karina": "Projektant UI/UX. Tworzy interfejsy, które zwiększają sprzedaż i konwersję biznesu.",
+      "dmytro": "Web developer. Buduje szybkie, niezawodne produkty, gotowe do skalowania i rozwoju biznesu.",
+      "alex": "Specjalista contentu. Tworzy mocne wizualne i tekstowe treści wzmacniające markę."
+    },
+    "features": {
+      "rating": {
+        "rating": "ocena",
+        "text": "opierając się o opinię naszych klientów"
+      },
+      "pages": "wdrożonych stron",
+      "clients": "naszych klientów nas poleca"
+    }
+  },
+  "aboutUs": {
+    "title": "O nas",
+    "textOne": "Jesteśmy doświadczonym studiem projektowym, które tworzy strony internetowe i aplikacje mobilne dla firm z różnych branż. Specjalizujemy się w nowoczesnych landing pages, sklepach online i treściach marketingowych, które pomagają markom wyróżnić się w cyfrowym świecie z myślą o SEO i pozycjonowaniu w Google.",
+    "textTwo": "Każdy projekt realizujemy z dbałością o detale, łącząc nowoczesny design z technologią. Tworzymy strony i aplikacje, które są estetyczne, skuteczne biznesowo i przyjazne w obsłudze. Dzięki naszemu doświadczeniu łączymy estetykę z funkcjonalnością, co buduje rozpoznawalność marki i pozytywne doświadczenia użytkowników."
+  },
+  "formReply": {
+    "reply": "Dziękujemy! Otrzymaliśmy Twoje zgłoszenie i wkrótce się odezwemy",
+    "title": "Otrzymaliśmy Twoją wiadomość.",
+    "velcome": "Hej",
+    "signatureOne": "Z poważaniem ",
+    "signatureTwo": "Zespół Light Street"
+  },
+  "oferSection": {
+    "title": "Oferta",
+    "text": "Koszt stworzenia strony internetowej zależy od wielu czynników - m.in. stopnia złożoności projektu, projektu graficznego, liczby podstron, treści oraz dodatkowych funkcjonalności. Każdą realizację wyceniamy indywidualnie, po analizie potrzeb i oczekiwań klienta. Umów się z nami na bezpłatną konsultację, a przygotujemy wycenę Twojej strony www dopasowaną do budżetu i celów biznesowych."
+  },
+  "ofers": {
+    "landingPage": {
+      "title": "Landing Page",
+      "features": [
+        "Strona jednostronicowa do sprzedaży lub zbierania zgłoszeń",
+        "Prezentacja usług lub produktów przyciągająca uwagę",
+        "Responsywny projekt dla każdego urządzenia",
+        "Integracja z formularzami i komunikatorami do natychmiastowego kontaktu"
+      ],
+      "price": "Cena od 700$",
+      "timeTitle": "Czas realizacji:",
+      "time": "7-30 dni roboczych"
+    },
+    "selfWebSite": {
+      "title": "Strona wizytówka",
+      "features": [
+        "Podstawowe informacje o firmie lub specjaliście",
+        "Prezentacja usług lub produktów przyciągająca uwagę",
+        "Responsywny projekt dla wszystkich urządzeń",
+        "Integracja z formularzami i komunikatorami do natychmiastowego kontaktu"
+      ],
+      "price": "",
+      "timeTitle": "Czas realizacji:",
+      "time": "7-30 dni roboczych"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "features": [
+        "Grupowanie prac według kategorii",
+        "Responsywny projekt i wersja mobilna",
+        "Łatwe dodawanie nowych projektów",
+        "Idealne dla specjalistów, studiów i zespołów kreatywnych",
+        "Interaktywne elementy i animacje dla większego zaangażowania odwiedzających"
+      ],
+      "price": "",
+      "timeTitle": "Czas realizacji:",
+      "time": "1-2 miesiące"
+    },
+    "site": {
+      "title": "Strona korporacyjna",
+      "features": [
+        "Struktura z sekcjami 'O nas', 'Usługi', 'Kontakt'...",
+        "Responsywny projekt i wersja mobilna",
+        "Przygotowanie SEO i integracja z analizą w celu zwiększenia sprzedaży online",
+        "Możliwość dodawania nowych stron w przyszłości"
+      ],
+      "price": "Cena od 1200$",
+      "timeTitle": "Czas realizacji:",
+      "time": "1-3 miesiące"
+    },
+   "store": {
+  "title": "Sklep internetowy",
+  "features": [
+    "Katalog produktów ze zdjęciami, opisami i cenami",
+    "Zamówienia online i obsługa dostaw",
+    "Integracja z systemami płatności",
+    "Zarządzanie produktami i zamówieniami",
+    "Podłączenie analityki sprzedaży dla efektywnego marketingu"
+  ],
+  "price": "Cena od 8000$",
+  "timeTitle": "Czas realizacji:",
+  "time": "6-8 miesięcy"
+}
+
+  },
+  "ASsection": {
+    "title": "Dodatkowe usługi"
+  },
+  "additionalServises": {
+    "Optimisation": {
+      "svg": "\\svg\\symbol-defs.svg#code",
+      "serviceName": "Optymalizacja",
+      "info": "Istniejącej strony internetowej klienta w celu zwiększenia jej szybkości i wydajności oraz rozbudowa o nowe funkcjonalności dopasowane do potrzeb biznesowych."
+    },
+    "Redesign": {
+      "svg": "\\svg\\symbol-defs.svg#stick",
+      "serviceName": "Przeprojektowanie",
+      "info": "Istniejącej strony internetowej klienta zgodnie z nowoczesnymi standardami designu, użyteczności i SEO. Aktualizujemy wygląd witryny, poprawiamy nawigację, dostosowujemy ją do urządzeń mobilnych i wdrażamy rozwiązania zwiększające konwersję."
+    },
+    "Copywriting": {
+      "svg": "\\svg\\symbol-defs.svg#pen",
+      "serviceName": "Copywriting",
+      "info": "Kluczowy element każdej strony internetowej. Dobrze przygotowane i przemyślane treści zwiększają konwersję, budują zaufanie do firmy, produktu lub usługi oraz wspierają pozycjonowanie w Google i innych wyszukiwarkach."
+    },
+    "Content": {
+      "svg": "\\svg\\symbol-defs.svg#diament",
+      "serviceName": "Kontent",
+      "info": "Czyli zdjęcia, grafiki, filmy i multimedia, które budują wizerunek marki. Spójne i wartościowe treści przyciągają uwagę użytkowników, zwiększają zaangażowanie, poprawiają widoczność w Google i wspierają sprzedaż produktów oraz usług."
+    },
+    "SEO": {
+      "svg": "\\svg\\symbol-defs.svg#zoom",
+      "serviceName": "SEO optymalizacja",
+      "info": "To proces dostosowania strony internetowej do wymagań wyszukiwarek, aby osiągała wyższe pozycje w Google. Obejmuje analizę słów kluczowych, poprawę struktury strony, optymalizację treści, szybkości ładowania oraz linkowania wewnętrznego. Dzięki skutecznej optymalizacji SEO Twoja strona staje się lepiej widoczna, przyciąga więcej użytkowników i zwiększa szanse na konwersję."
+    },
+    "Support": {
+      "svg": "\\svg\\symbol-defs.svg#bliskavka",
+      "serviceName": "Wsparcie techniczne",
+      "info": "Strony internetowej to gwarancja jej sprawnego i bezpiecznego działania. Obejmuje bieżące aktualizacje, monitorowanie wydajności, ochronę przed awariami i cyberzagrożeniami oraz szybkie reagowanie na problemy techniczne. Dzięki temu Twoja strona działa stabilnie, jest zawsze dostępna dla użytkowników i wspiera realizację celów biznesowych."
+    }
+  },
+  "Portfolio": {
+    "portfolio": "Portfolio"
+  },
+  "Benefits": {
+    "title": "Dlaczego warto pracować z nami?",
+    "benefitsList": {
+      "expiriance": {
+        "title": "Doświadczenie i profesjonalizm",
+        "text": "Tworzymy strony internetowe i aplikacje dla firm z różnych branż. Jesteśmy w stałym kontakcie z klientem przed, w trakcie i po zakończeniu projektu."
+      },
+      "efects": {
+        "title": "Efekty biznesowe",
+        "text": "Łączymy estetykę z funkcjonalnością, aby Twoja strona była nie tylko piękna, ale też skutecznie przyciągała klientów i zwiększała konwersję."
+      },
+      "approach": {
+        "title": "Indywidualne podejście",
+        "text": "Nie stosujemy gotowych schematów — każdą stronę projektujemy od podstaw, tak aby najlepiej prezentował firmę lub produkt/usługę."
+      },
+      "support": {
+        "title": "Projekt pod klucz",
+        "text": "Zapewniamy pełne wsparcie - od projektu graficznego, kontentu i treści, po SEO oraz opiekę techniczną"
+      }
+    }
+  },
+  "ContactSection": {
+    "title": "Kontakt",
+    "text": "Wypełnij krótki formularz, a nasz menedżer skontaktuje się z Tobą, by doradzić najlepsze rozwiązanie dopasowane do Twoich potrzeb"
+  },
+  "footer": {
+    "title1": "Zbuduj z nami",
+    "title2": "swoją przewagę",
+    "title3": "online",
+    "ownerInfo": "Wykorzystanie materiałów jest dozwolone wyłącznie za zgodą właściciela projektu.",
+    "privatePolice": "2025 Wszelkie prawa zastrzeżone.",
+    "link": "Polityka Prywatności"
+  },
+  "privatePolicy": {
+    "text": "Light Street Web Studio przetwarza dane osobowe zgodnie z Rozporządzeniem (UE) 2016/679 (RODO).Kiedy kontaktujesz się z nami poprzez stronę, możemy otrzymać twoje imię, adres email, numer telefonu lub informacje zawarte w wiadomości lub zapytaniu projektowym.Strona zbiera również automatycznie dane techniczne, takie jak adres IP, informacje o przeglądarce, pliki cookies oraz dane analityczne.Takie przetwarzanie odbywa się na podstawie naszego prawnie uzasadnionego interesu zgodnie z art. 6 ust. 1 lit.  RODO, aby zapewnić poprawne działanie strony i jej ulepszenia.\n\n\u00A0\u00A0\u00A0Dane przekazywane przez ciebie świadomie wykorzystujemy do udzielania odpowiedzi, przygotowania wycen oraz realizacji obowiązków umownych.Przetwarzanie to jest niezbędne do wykonania umowy lub działań podejmowanych przed jej zawarciem, co określa art. 6 ust. 1 lit. b RODO.Jeśli wyrażasz zgodę na komunikację marketingową, odbywa się ona wyłącznie na podstawie twojej zgody, zgodnie z art. 6 ust. 1 lit. a RODO, którą możesz w każdej chwili wycofać — zgodnie z art. 7 ust. 3.\n\n\u00A0\u00A0\u00A0Możemy udostępniać twoje dane zaufanym podmiotom, takim jak dostawcy hostingu, narzędzi analitycznych lub podwykonawcy projektowi.Wszystkie te podmioty działają wyłącznie na nasze polecenie jako podmioty przetwarzające zgodnie z art. 28 RODO.Jeśli dane są przekazywane poza Unię Europejską, stosujemy Standardowe Klauzule Umowne zgodnie z art. 46 ust. 2 lit. c lub przekazanie odbywa się do krajów uznanych przez Komisję Europejską za zapewniające odpowiedni poziom ochrony według art. 45.\n\n\u00A0\u00A0\u00A0Dane przechowujemy tylko tak długo, jak jest to konieczne do celów, w których zostały zebrane, co odpowiada zasadzie ograniczenia przechowywania określonej w art. 5 ust. 1 lit. e RODO.\n\n\u00A0\u00A0\u00A0Przysługują ci prawa dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu oraz przenoszenia danych.Prawa te zostały określone w art. 15–21 RODO.W sprawach związanych z prywatnością możesz skontaktować się z nami pod adresem privacy@lightstreet.com."
+  }
+}

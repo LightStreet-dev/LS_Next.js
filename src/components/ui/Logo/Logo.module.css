@@ -1,0 +1,12 @@
+.logoWrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    text-align: start;
+}
+.logoImg{
+    width: 35px;
+    height: 35px;
+    fill: var(--mainBackground);
+}

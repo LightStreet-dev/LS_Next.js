@@ -1,0 +1,47 @@
+.burgerWrapper {
+  display: flex;
+  position: relative;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  opacity: 0;
+  background: linear-gradient(
+    246.04deg,
+    rgba(0, 36, 46, 0.6) 3.77%,
+    rgba(0, 111, 186, 0.6) 99.15%
+  );
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modalContent {
+  display: flex;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: auto 0;
+}
+.modalNavList {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  font-size: 25px;
+}

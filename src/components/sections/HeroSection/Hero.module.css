@@ -1,0 +1,45 @@
+
+.herroContainer{
+    display: flex;
+    padding: 71px 0 0;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 83px;
+    
+}
+
+
+@media (min-width: 768px) {
+  .herroContainer{
+     padding-top: 83px;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-bottom: 88px;
+  }
+  .heroWraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 65px;
+  }
+}
+@media (min-width: 1024px) {
+  .herroContainer{
+     padding-top: 65px;
+     margin-bottom: 70px;
+}
+.heroWraper{
+  margin-bottom: 55px;
+}
+
+}
+
+@media (min-width: 1560px) {
+ .herroContainer{
+     padding-top: 97px;
+     margin-bottom: 115px;
+}
+.heroWraper{
+  margin-bottom: 96px;
+}
+}

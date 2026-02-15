@@ -1,0 +1,48 @@
+.swiperNavBtn {
+  display: flex;
+
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.swiperBtn {
+  background-color: transparent;
+  border: none;
+  color: rgb(29, 60, 236);
+
+  font-weight: 600;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.swiperBtnDisabled {
+   opacity: 0.5;
+fill: rgb(29, 60, 236);
+  transition: opacity 0.3s ease;
+}
+
+.arrowSvg {
+  width: 10px;
+
+  fill: rgb(29, 60, 236);
+}
+
+@media (min-width: 1024px) {
+  .swiperNavBtn{
+
+    margin-top: 50px;
+margin-right: 55px;
+  justify-content:right;  }
+  .arrowSvg {
+  width: 15px;
+
+  fill: rgb(29, 60, 236);
+}
+    
+}

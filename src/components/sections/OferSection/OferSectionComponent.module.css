@@ -1,0 +1,129 @@
+.oferContainer {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.oferTitle {
+  color: var(--secondContentColor);
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: start;
+  margin-bottom: 30px;
+  line-height: 100%;
+}
+.oferText {
+  color: var(--secondContentColor);
+  font-size: var(--textFontSize);
+  text-align: start;
+  margin-bottom: 30px;
+}
+.oferBtnWrap {
+  margin-bottom: 30px;
+}
+
+.oferButton {
+  color: var(--secondContentColor);
+  border: 1px solid #006fba;
+  width: 100%;
+
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.oferButton:hover {
+  color: var(--secondContentColor);
+  transition: 0.3s;
+}
+.oferButton:active {
+  color: var(--secondContentColor);
+  border: 1px solid var(--secondContentColor);
+}
+.oferButton:focus {
+  color: var(--secondContentColor);
+  border: 1px solid var(--secondContentColor);
+}
+
+@media (min-width: 768px) {
+  .oferContainer {
+    padding-top: 65px;
+    position: relative;
+  }
+  .oferBtnWrap {
+    display: flex;
+    align-items: start;
+  }
+  .oferText {
+    max-width: 650px;
+    font-size: 20px;
+  }
+  .oferButton {
+    width: 220px;
+  }
+  .oferTitle {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .oferTitle {
+    font-size: 75px;
+  }
+}
+@media (min-width: 1224px) {
+  .oferContainer {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+  }
+  .oferTitle {
+    font-size: 75px;
+    margin-bottom: 62px;
+  }
+  .oferText {
+    color: var(--secondContentColor);
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 50px;
+
+    max-width: 452px;
+  }
+  .oferBtnWrap {
+    margin-bottom: 30px;
+  }
+
+  .oferButton {
+    color: var(--secondContentColor);
+
+    width: 100%;
+    max-width: 220px;
+    padding: 21px 55px;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1550px) {
+  .oferContainer {
+    padding-top: 100px;
+    gap: 60px;
+     max-height: 650px;
+  }
+  .oferTitle {
+    font-size: 96px;
+    margin-bottom: 62px;
+  }
+  .oferText {
+    font-size: 20px;
+    max-width: 452px;
+  }
+  .oferBtnWrap {
+    margin-bottom: 30px;
+  }
+
+  
+}

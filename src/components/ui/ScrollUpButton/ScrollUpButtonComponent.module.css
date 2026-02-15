@@ -1,0 +1,28 @@
+.sctollBtnWrapper {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  cursor: pointer;
+
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.scrollBtn {
+  width: 50px;
+  height: 50px;
+  fill: #096ec0;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.sctollBtnWrapper:hover .scrollBtn,
+.sctollBtnWrapper:active .scrollBtn {
+  transform: translateY(-10px);
+}
+
+@media (min-width: 768px) {
+  .sctollBtnWrapper {
+    right: 40px;
+  }
+}

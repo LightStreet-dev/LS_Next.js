@@ -1,0 +1,25 @@
+{
+  "formTitle": "Contact us",
+  "formPlaseholders": {
+    "name": "Name",
+    "company": "Company",
+    "telefon": "Phone",
+    "email": "Email",
+    "text": "Message",
+    "agree": "I agree to the processing of my personal data.",
+    "shortAgree":"I agree to data processing."
+  },
+  "errors": {
+    "error": "This field is required",
+    "min": "Min. 3 letters",
+    "max": "Text cannot exceed 20 letters",
+    "maxText": "Maximum number of letters reached",
+    "mail": "invalid email format",
+    "onlyLetters": "Field must contain letters only",
+    "phone": "Please enter a valid phone number"
+  },
+  "button": {
+    "send": "Send",
+    "sending": "Sending…"
+  }
+}

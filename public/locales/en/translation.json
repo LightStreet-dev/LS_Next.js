@@ -1,0 +1,185 @@
+{
+  "header": {
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "contactButton": "Consultation"
+  },
+  "hero": {
+    "heroTitle1": "Complete",
+    "heroTitle2": "Design",
+    "heroTitle3": "Solutions",
+    "heroText": "From idea to launch — tailored UI/UX, visual identity, and web assets for your product.",
+    "heroBtn": "Our Projects",
+    "team": {
+      "karina": "UI/UX designer. Designs interfaces that boost business sales and conversion rates.",
+      "dmytro": "Web developer. Builds fast, reliable products ready for scaling and business growth.",
+      "alex": "Content specialist. Creates strong visual and textual content to strengthen brand identity."
+    },
+    "features": {
+      "rating": {
+        "rating": "rating",
+        "text": "based on the opinion of our customers"
+      },
+      "pages": "implemented pages",
+      "clients": "our clients recommend us"
+    }
+  },
+  "aboutUs": {
+    "title": "About us",
+    "textOne": "We are an experienced design studio that creates websites and mobile applications for companies across various industries. We specialize in modern landing pages, online stores, and marketing content that help brands stand out in the digital world, with a strong focus on SEO and Google ranking.",
+    "textTwo": "We execute every project with great attention to detail, combining modern design with technology. We create websites and applications that are visually appealing, business-effective, and easy to use. Thanks to our experience, we merge aesthetics with functionality, enhancing brand recognition and delivering a positive user experience."
+  },
+  "formReply": {
+    "reply": "Thank you! We received your request and will contact you soon.",
+    "title": "We’ve received your message",
+    "velcome": "Hi",
+    "signatureOne": "Best regards",
+    "signatureTwo": " The Light Street Team"
+  },
+  "oferSection": {
+    "title": "Services",
+    "text": "The cost of creating a website depends on many factors — including project complexity, graphic design, number of subpages, content, and additional functionalities. Each project is priced individually after analyzing the client’s needs and expectations. Schedule a free consultation with us, and we will prepare a quote for your website tailored to your budget and business goals."
+  },
+  "ofers": {
+    "landingPage": {
+      "title": "Landing Page",
+      "features": [
+        "One-page website for selling or collecting leads",
+        "Presentation of services or products that captures attention",
+        "Responsive design for any device",
+        "Integration with forms and messengers for instant contact"
+      ],
+      "price": "Price from $700",
+      "timeTitle": "Implementation time:",
+      "time": "7-30 working days"
+    },
+    "selfWebSite": {
+      "title": "Business Card Website",
+      "features": [
+        "Basic information about the company or specialist",
+        "Presentation of services or products that captures attention",
+        "Responsive design for all devices",
+        "Integration with forms and messengers for instant contact"
+      ],
+      "price": "",
+      "timeTitle": "Implementation time:",
+      "time": "7-30 working days"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "features": [
+        "Grouping works by categories",
+        "Responsive design and mobile version",
+        "Easy addition of new projects",
+        "Perfect for specialists, studios, and creative teams",
+        "Interactive elements and animations for higher visitor engagement"
+      ],
+      "price": "",
+      "timeTitle": "Implementation time:",
+      "time": "1-2 months"
+    },
+   "site": {
+  "title": "Corporate Website",
+  "features": [
+    "Structure with sections 'About Us', 'Services', 'Contacts'...",
+    "Responsive design and mobile version",
+    "SEO preparation and integration with analytics for online sales growth",
+    "Ability to add new pages in the future"
+  ],
+  "price": "Price from $1200",
+  "timeTitle": "Implementation time:",
+  "time": "1-3 months"
+}
+,
+    "store": {
+  "title": "Online Store",
+  "features": [
+    "Product catalog with photos, descriptions, and prices",
+    "Online ordering and delivery processing",
+    "Integration with payment systems",
+    "Management of products and orders",
+    "Connection of sales analytics for effective marketing"
+  ],
+  "price": "Price from $8000",
+  "timeTitle": "Implementation time:",
+  "time": "6-8 months"
+}
+
+  },
+  "ASsection": {
+    "title": "Additional services"
+  },
+  "additionalServises": {
+    "title": "Additional services",
+    "Optimisation": {
+      "svg": "\\svg\\symbol-defs.svg#code",
+      "serviceName": "Optimization",
+      "info": "Optimization of the client's existing website to increase its speed and performance, as well as expanding it with new functionalities tailored to business needs."
+    },
+    "Redesign": {
+      "svg": "\\svg\\symbol-defs.svg#stick",
+      "serviceName": "Redesign",
+      "info": "Redesign of the client's existing website in accordance with modern design, usability, and SEO standards. We update the website’s appearance, improve navigation, adapt it for mobile devices, and implement solutions that increase conversion rates."
+    },
+    "Copywriting": {
+      "svg": "\\svg\\symbol-defs.svg#pen",
+      "serviceName": "Copywriting",
+      "info": "A key element of every website. Well-prepared and thoughtfully crafted content increases conversions, builds trust in the company, product, or service, and supports positioning in Google and other search engines."
+    },
+    "Content": {
+      "svg": "\\svg\\symbol-defs.svg#diament",
+      "serviceName": "Content",
+      "info": "That is, photos, graphics, videos, and multimedia that build the brand image. Consistent and valuable content attracts user attention, increases engagement, improves visibility on Google, and supports the sale of products and services."
+    },
+    "SEO": {
+      "svg": "\\svg\\symbol-defs.svg#zoom",
+      "serviceName": "SEO optimization",
+      "info": "It is the process of adapting a website to meet search engine requirements to achieve higher rankings on Google. It includes keyword analysis, improving site structure, content optimization, loading speed, and internal linking. Effective SEO optimization makes your site more visible, attracts more users, and increases the chances of conversion."
+    },
+    "Support": {
+      "svg": "\\svg\\symbol-defs.svg#bliskavka",
+      "serviceName": "Technical support",
+      "info": "Website technical support ensures its smooth and secure operation. It includes regular updates, performance monitoring, protection against failures and cyber threats, and quick response to technical issues. This ensures your website operates reliably, is always accessible to users, and supports the achievement of business goals."
+    }
+  },
+  "Portfolio": {
+    "portfolio": "Portfolio"
+  },
+  "Benefits": {
+    "title": "Why choose us?",
+    "benefitsList": {
+      "expiriance": {
+        "title": "Experience and professionalism",
+        "text": "We create websites and applications for companies in various industries. Always maintain constant contact with the client before, during, and after the completion of the project.."
+      },
+      "efects": {
+        "title": "Business results",
+        "text": "We combine aesthetics with functionality so that your website is not only beautiful but also effectively attracts customers and increases conversion."
+      },
+      "approach": {
+        "title": "Individual approach",
+        "text": "We don’t use ready-made templates — we design each website from scratch so that it presents the company or product/service in the best possible way."
+      },
+      "support": {
+        "title": "Turnkey solution",
+        "text": "We provide full support — from graphic design, content and copy, to SEO and technical maintenance."
+      }
+    }
+  },
+  "ContactSection": {
+    "title": "Contact",
+    "text": "Fill out a short form, and our manager will contact you to advise the best solution tailored to your needs."
+  },
+  "footer": {
+    "title1": "Build your",
+    "title2": "online advantage",
+    "title3": "with us",
+    "ownerInfo": "Use of materials is permitted only with the project owner’s consent.",
+    "privatePolice": "© 2025 All rights reserved.",
+    "link": "Private Policy"
+  },
+  "privatePolicy": {
+    "text": "Light Street Web Studio processes personal data in accordance with Regulation (EU) 2016/679 (GDPR). When you contact us through the website, we may receive your name, email address, phone number or any information you choose to provide in a message or project request. The website also automatically collects technical data such as IP address, browser information, cookies and analytics metrics.\n\n\u00A0\u00A0\u00A0This technical processing is carried out based on our legitimate interest under Article 6(1)(f) GDPR to ensure the website's proper functioning and improve its performance. The data you send intentionally is used to respond to your inquiries, provide consultations, estimate projects and fulfill contractual obligations. This processing is necessary for the performance of a contract or steps needed before entering into one, as outlined in Article 6(1)(b) GDPR.\n\n\u00A0\u00A0\u00A0If you agree to receive marketing messages, such processing relies solely on your consent according to Article 6(1)(a) GDPR, which you may withdraw at any time, as permitted by Article 7(3\n\n\u00A0\u00A0\u00A0We may share your data with trusted service providers such as hosting companies, analytics services or project subcontractors. All such partners act only on our instructions and are bound by Article 28 GDPR as data processors. If international data transfers occur outside the European Union, we rely on Standard Contractual Clauses under Article 46(2)(c) GDPR or transfer data only to countries recognized by the European Commission as providing an adequate level of protection in line with Article 45.\n\n\u00A0\u00A0\u00A0We retain personal data only for as long as necessary for the purposes for which it was collected, following the storage limitation principle established in Article 5(1)(e) GDPR. You have the right to access your personal data, request correction or deletion, restrict or object to processing, and receive your data in a portable format. These rights are guaranteed by Articles 15–21 GDPR. For any privacy-related questions, please contact us at privacy@lightstreet.com."
+  }
+}

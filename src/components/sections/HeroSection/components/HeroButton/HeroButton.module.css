@@ -1,0 +1,33 @@
+.heroBatton {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+  border: 1px solid;
+  border-radius: 35px;
+  background-color: var(--buttonColor);
+  color: #0b0d14;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  width: 100%; 
+  margin-bottom: 85px;
+}
+
+@media (min-width: 768px) {
+  .heroBatton {
+    width: 220px; 
+    margin: 0;
+  }}
+
+  @media (min-width: 1024px){
+    .heroBatton {
+   width: 100%;
+    max-width: 220px;
+    padding: 21px 50px;
+    overflow: hidden;
+    margin-bottom: 0;
+  
+    }
+  }

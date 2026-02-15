@@ -1,0 +1,115 @@
+.aboutUs {
+  position: relative;
+  padding: 50px 20;
+  background: linear-gradient(
+    357.72deg,
+    rgba(0, 36, 46, 0.9) -35.7%,
+    #006fba 87.12%
+  );
+  padding: 50px 0;
+}
+
+.aboutUsTitle {
+  text-align: start;
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+  font-size: 40px;
+  line-height: 0.9;
+  margin-bottom: 26px;
+}
+
+.aboutUsWrapper {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-start;
+  max-width: 100%;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.aboutLogo {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 132px;
+  height: 75px;
+  fill: #006fba;
+  z-index: 5;
+}
+.aboutUsText {
+  position: relative;
+  font-size: var(--textFontSize);
+  z-index: 10;
+}
+.aboutUsText div {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .aboutUs {
+    padding: 65px 0;
+  }
+  .aboutUsTitle {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  .aboutUsText {
+    font-size: 20px;
+  }
+  .aboutLogo {
+    max-width: 100%;
+    height: auto;
+  }
+  .aboutUsWrapper {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutUs {
+    padding: 60px 0;
+  }
+  .aboutUsTitle {
+    font-size: 75px;
+    margin-bottom: 62px;
+  }
+  .aboutUsText {
+    font-size: 18px;
+    max-width: 480px;
+  }
+  .aboutLogo {
+    position: absolute;
+    width: 455px;
+    height: 230px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .aboutUsWrapper {
+    flex-direction: row;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1550px) {
+  .aboutUs {
+    padding: 95px 0;
+  }
+  .aboutUsTitle {
+    font-size: 96px;
+    margin-bottom: 62px;
+  }
+  .aboutUsText {
+    font-size: 20px;
+    max-width: 480px;
+  }
+  .aboutLogo {
+    position: absolute;
+    width: 475px;
+    height: 250px;
+   
+  }
+ 
+}

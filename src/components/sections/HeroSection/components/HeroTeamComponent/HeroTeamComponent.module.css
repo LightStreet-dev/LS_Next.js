@@ -1,0 +1,42 @@
+.teamWraper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: -20px;
+  position: relative;
+  &:first-child {
+    margin-left: 0;
+
+  }
+}
+.teamImg {
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, border 0.1s ease-in-out;
+  margin-bottom: 5px;
+ 
+}
+
+.teamImg:hover {
+ border: 0px solid;
+  }
+ .teamImg:active {
+    filter: grayscale(20%);
+  }
+  .teamImg:focus {
+    filter: grayscale(20%);
+  }
+
+.activeImg{
+  filter: grayscale(20%);
+}
+
+@media (min-width: 375px) {
+  .teamImg {
+  width: 77px;
+  height: 77px;
+}}

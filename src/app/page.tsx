@@ -1,66 +1,61 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import { useMediaQuery } from "react-responsive";
+import Header from "@/components/layout/Header/Header";
+import FooterComponent from "@/components/layout/Footer/Footer";
+import PrivateData from "@/components/layout/Footer/components/PrivateDataComponent/PrivateData";
+import { useInView } from "react-intersection-observer";
+import { useState } from "react";
+import clsx from "clsx";
+import usePageViews from "@/hooks/usePageViews";
+import ScrollUpButtonComponent from "@/components/ui/ScrollUpButton/ScrollUpButtonComponent";
+import Hero from "@/components/sections/HeroSection/Hero";
+import AboutUsComponent from "@/components/sections/AboutUsSection/AboutUsComponent";
+import OferSectionComponent from "@/components/sections/OferSection/OferSectionComponent";
+import AditionalServices from "@/components/sections/AditionalServiceSection/AditionalServices";
 
 export default function Home() {
+  const [openForm, setOpenForm] = useState<boolean>(false);
+  const isMobileHeader = useMediaQuery({ maxWidth: 860 });
+  const [openLink, setOpenLink] = useState<boolean>(false);
+  const { ref: inViewRef, inView } = useInView({
+    threshold: 0,
+  });
+  const handleToggle = (
+    setter: React.Dispatch<React.SetStateAction<boolean>>,
+  ) => {
+    setter((prev) => !prev);
+  };
+  usePageViews();
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="bodyWrapper">
+      <div className="headerHerroWrapper">
+        <Header
+          observer={inViewRef}
+          mobMediaQuery={isMobileHeader}
+          toggleForm={handleToggle}
+          setOpenForm={setOpenForm}
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+        <Hero />
+      </div>
+      <AboutUsComponent />
+      <OferSectionComponent
+        toggleForm={handleToggle}
+        setOpenForm={setOpenForm}
+      />
+      <AditionalServices />
+      {/* <PortfolioSectionCompopnent />
+      <BenefitsComponent />
+      <ContactSectionComponent />
+      <SubmitForm */}
+      <FooterComponent toggleModal={handleToggle} setOpenLink={setOpenLink} />
+      <PrivateData
+        toggleModal={handleToggle}
+        openLink={openLink}
+        setOpenLink={setOpenLink}
+      />
+      <div className={clsx("scrollUpBtn", !inView && "scrollUpBtnActive")}>
+        <ScrollUpButtonComponent />
+      </div>
     </div>
   );
 }
