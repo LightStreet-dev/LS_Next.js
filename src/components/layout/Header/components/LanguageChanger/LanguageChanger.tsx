@@ -1,15 +1,19 @@
 
 import type { StylesConfig, OptionProps } from "react-select";
+import type { ComponentType } from "react";
+import type { Props } from "react-select";
 import dynamic from "next/dynamic";
 import { useTranslation } from "react-i18next";
 import s from "./LanguageChanger.module.css";
-const Select = dynamic(() => import("react-select"), {
-  ssr: false,
-});
+
 interface OptionType {
   value: string;
   label: string;
 }
+
+const Select = dynamic(() => import("react-select"), {
+  ssr: false,
+}) as ComponentType<Props<OptionType, false>>;
 
 const customStyles: StylesConfig<OptionType, false> = {
   menu: (provided) => ({
