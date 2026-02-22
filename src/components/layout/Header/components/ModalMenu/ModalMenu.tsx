@@ -48,11 +48,19 @@ useGSAP(
 
   return (
     <>
-      {/* 🔹 Бургер — залишається в хедері */}
-      <div className={s.burgerWrapper}>
-        <Hamburger toggled={isOpen} toggle={setOpen} size={35} />
-      </div>
+      
+    <div className={s.burgerWrapper}>
+      <Hamburger toggled={isOpen} toggle={setOpen} size={35} />
+    </div>
 
+
+  {/* Бургер через портал коли відкрито — поверх модалки */}
+  {isOpen && createPortal(
+    <div className={s.burgerWrapperOpen}>
+      <Hamburger toggled={isOpen} toggle={setOpen} size={35} />
+    </div>,
+    document.body
+  )}
       {/* 🔥 МОДАЛКА ЧЕРЕЗ PORTAL */}
       {
         createPortal(

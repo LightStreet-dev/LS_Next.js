@@ -32,7 +32,7 @@ const InputComponent: React.FC<inputProps> = ({
       <label
         className={clsx(
           s.labelForm,
-          type === "textarea" && s.labelFormTextArea,
+          type === "textarea" && s.labelFormTextArea, altDesing && 
           s.labelStyleShort,
         )}
         htmlFor={id}

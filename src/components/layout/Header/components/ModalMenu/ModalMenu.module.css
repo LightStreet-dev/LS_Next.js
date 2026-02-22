@@ -1,12 +1,22 @@
 .burgerWrapper {
   display: flex;
   position: relative;
-  top: 0;
-  right: 0;
   cursor: pointer;
-  z-index: 2000;
 }
 
+.burgerWrapperOpen {
+  position: fixed;
+  top: 0px;
+  right: 16px;
+  z-index: 99999;
+  cursor: pointer;
+  opacity: 1;
+  animation: fadeIn 1.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -44,4 +54,21 @@
   align-items: start;
   gap: 20px;
   font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .burgerWrapperOpen {
+ 
+   top: 0px;
+  right: 40px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+ .burgerWrapperOpen {
+ 
+   top: 0px;
+  right: 16px;
+  }
 }
