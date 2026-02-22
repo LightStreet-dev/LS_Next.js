@@ -12,6 +12,10 @@ import Hero from "@/components/sections/HeroSection/Hero";
 import AboutUsComponent from "@/components/sections/AboutUsSection/AboutUsComponent";
 import OferSectionComponent from "@/components/sections/OferSection/OferSectionComponent";
 import AditionalServices from "@/components/sections/AditionalServiceSection/AditionalServices";
+import PortfolioSectionCompopnent from "@/components/sections/PortfolioSection/PortfolioSectionCompopnent";
+import BenefitsComponent from "@/components/sections/BenefitsSection/BenefitsComponent";
+import ContactSectionComponent from "@/components/sections/FormSection/ContactSectionComponent";
+import SubmitForm from "@/components/ui/ContactForm/SubmitForm/SubmitForm";
 
 export default function Home() {
   const [openForm, setOpenForm] = useState<boolean>(false);
@@ -43,10 +47,15 @@ export default function Home() {
         setOpenForm={setOpenForm}
       />
       <AditionalServices />
-      {/* <PortfolioSectionCompopnent />
+       <PortfolioSectionCompopnent />
       <BenefitsComponent />
       <ContactSectionComponent />
-      <SubmitForm */}
+      <SubmitForm
+        openForm={openForm}
+        setOpenForm={setOpenForm}
+        setOpenLink={setOpenLink}
+        toggleModal={handleToggle}
+      />
       <FooterComponent toggleModal={handleToggle} setOpenLink={setOpenLink} />
       <PrivateData
         toggleModal={handleToggle}

@@ -1,0 +1,90 @@
+.portfolioTitle{
+color: var(--secondContentColor);
+font-weight: 600;
+
+font-size: 40px;
+
+line-height: 50px;
+letter-spacing: 0%;
+text-align: start;
+margin-bottom: 30px;
+
+}
+.portfolioSection {
+  position: relative;
+}
+.portfolioSlider {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  max-width: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.navWrapper {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  max-width: 250px;
+}
+.customPaginationProjects {
+  display: flex;
+  justify-content: center;
+  flex: 1; /* займає простір між кнопками */
+  gap: 8px;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+
+    .portfolioTitle{
+    font-size: 48px;
+    text-align: start;
+    margin-bottom: 40px;
+    
+    }
+  .portfolioSlider {
+    width: 100%;
+    max-width: 1240px;
+    overflow: hidden;
+  }
+  .navWrapper {
+    margin-top: 50px;
+    max-width: 320px;
+  }
+}
+@media (min-width: 1024px) {
+    .portfolioTitle{
+    font-size: 75px;
+    line-height: 100%;
+    text-align: start;
+margin-bottom: 62px;}
+  :global(.swiper-pagination-bullet) {
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+  }
+
+  .navWrapper {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1424px){
+.portfolioSlider {
+    width: 100%;
+    max-width: 1240px;
+    overflow: visible;
+  }
+}
+@media (min-width: 1550px) {
+    .portfolioTitle{
+    font-size: 96px;}}

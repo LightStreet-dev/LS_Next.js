@@ -1,0 +1,163 @@
+html:has(.modalFormOverlayActive) {
+  overflow: hidden; /* забороняє будь-яку прокрутку */
+  overscroll-behavior: none; /* блокує “підтікання” на мобільних */
+ 
+
+}
+html {
+  -webkit-text-size-adjust: 100%;
+ 
+}
+.inputWrapper {
+  position: relative;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  text-align: right;
+  position: absolute;
+  bottom: -15px;
+  width: 100%;
+}
+.modalFormOverlay {
+  position: fixed;
+  inset: 0;   /* замість top/left/width/height */
+  overflow: clip;
+  background: linear-gradient(
+    246.04deg,
+    rgba(0, 36, 46, 0.6) 3.77%,
+    rgba(0, 111, 186, 0.6) 99.15%
+  );
+  backdrop-filter: blur(8px);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modalFormOverlayActive {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.formWrapper {
+  max-width: 90%;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #cedadb;
+  border-radius: 5%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.modalContent {
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: auto 0;
+}
+
+.closeFormBtn {
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.checkbox {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.checkWrap {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.fileText2 {
+  width: 10px;
+  height: 10px;
+  fill: blue;
+  cursor: pointer;
+}
+
+.checkboxField {
+  width: 14px;
+  height: 14px;
+  margin: auto 0;
+  cursor: pointer;
+  appearance: none; /* прибираємо стандартний стиль */
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  transform: all 0.3s ease;
+}
+
+.checkboxField:checked {
+  border: 1px solid #4caf50; /* зелена галочка, якщо потрібно */
+  background-color: #4caf50;
+}
+.checkboxFieldError {
+  border: 2px solid red; /* червоний бордер коли не відмічено */
+}
+.checkboxField:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkboxText {
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  color: black;
+}
+.submitBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .formWrapper {
+    max-width: 400px;
+    width: 100%;
+    padding: 50px;
+  }
+  .checkWrap {
+    gap: 8px;
+  }
+}

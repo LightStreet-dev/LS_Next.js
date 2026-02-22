@@ -1,0 +1,191 @@
+.test {
+  color: yellow;
+  background-color: green;
+}
+
+.fieldWrapper {
+  position: relative;
+}
+.fieldStyle {
+  font-size: var(--formFontSize);
+  background: transparent;
+  width: 100%;
+  padding: 5px 5px;
+  height: 35px; /* робимо textarea такою ж високою, як input */
+  resize: none; /* забороняємо зміну розміру для textarea */
+  border: none;
+  border-bottom: 1px solid #bfb2b2;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+.inputStyleShort {
+  height: auto;
+  position: relative;
+  width: 100%;
+
+  color: var(--textColor);
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.inputStyleShort:-webkit-autofill,
+.inputStyleShort:-webkit-autofill:hover,
+.inputStyleShort:-webkit-autofill:focus {
+  -webkit-text-fill-color: white !important;
+
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.fieldStyle:focus + .labelForm {
+  top: -13px;
+  font-size: 10px;
+  color: #0073e6;
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.fieldStyle:not(:placeholder-shown) + .labelForm {
+  top: -13px;
+  font-size: 10px;
+  color: rgb(110, 108, 108);
+  outline: none;
+}
+.labelForm {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 5px;
+  font-size: 12px;
+  color: rgb(110, 108, 108);
+  background-color: inherit;
+  transition: all 0.3s ease;
+}
+.labelStyleShort {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: var(--mainContentColor);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  border-radius: 12px;
+  z-index: 2;
+  /* головне */
+
+  transition: all 0.5s ease;
+}
+.inputStyleShort:focus + .labelStyleShort,
+.inputStyleShort:not(:placeholder-shown) + .labelStyleShort {
+  top: 0;
+  left: 50px;
+  font-size: 10px;
+  color: var(--textColor);
+  outline: none;
+  box-shadow: none;
+  z-index: 10;
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.001); /* практично прозорий */
+  backdrop-filter: blur(15px);
+
+
+}
+.labelFormTextArea {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 5px;
+  font-size: 12px;
+  color: black;
+}
+
+.requireNone {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.require {
+  opacity: 1;
+  color: red;
+}
+
+textarea.fieldStyle:focus {
+  height: 85px;
+}
+textarea.fieldStyle:not(:placeholder-shown) {
+  height: 85px;
+}
+.fieldStyle[type="number"] {
+  /* Спочатку стандартна властивість */
+  appearance: none;
+
+  
+}
+.fieldStyle[type="number"]::-webkit-inner-spin-button,
+.fieldStyle[type="number"]::-webkit-outer-spin-button {
+  appearance: none; /* Стандарт */
+  -webkit-appearance: none; /* Вендорний префікс */
+  margin: 0;
+}
+.fieldStyle:-webkit-autofill,
+.fieldStyle:-webkit-autofill:hover,
+.fieldStyle:-webkit-autofill:focus,
+.fieldStyle:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* прозорий фон */
+  -webkit-text-fill-color: inherit !important; /* колір тексту з поля */
+  background-clip: content-box !important; /* запобігає накладанню жовтого/білого */
+  background: transparent !important; /* додатково робимо фон прозорим */
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px; /* товщина скролбара */
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f1f1f1; /* колір треку */
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #888; /* колір бігунка */
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #555; /* колір бігунка при наведенні */
+}
+
+@media (min-width: 768px) {
+  
+
+  .inputStyleShort:focus + .labelStyleShort,
+  .inputStyleShort:not(:placeholder-shown) + .labelStyleShort {
+    top: 0;
+    left: 40px;
+    font-size: 10px;
+    color: var(--textColor);
+    outline: none;
+    box-shadow: none;
+    z-index: 10;
+    border-color: transparent;
+  }
+  .inputStyleShort {
+    max-width: 210px;
+  }}
+
+  @media (min-width: 1024px) {
+  
+  .inputStyleShort {
+    font-size: 24px;
+    max-width: 350px;
+  }
+}

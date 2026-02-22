@@ -1,0 +1,141 @@
+.benefitsWrapper {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.benefitsTitle {
+  font-weight: 600;
+  max-width: 400px;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--secondContentColor);
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.benefitsList {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefitItem {
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+.benefitIcon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.benefitTextWrapper {
+  max-width: 260px;
+  z-index: 5;
+}
+.benefitItemTitle {
+  color: var(--secondContentColor);
+  font-weight: 600;
+  font-size: 24px;
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.benefitText {
+  color: var(--secondContentColor);
+  text-align: start;
+  font-size: var(--textFontSize);
+}
+
+@media (min-width: 768px) {
+  .benefitsWrapper {
+    margin-top: 65px;
+    padding-bottom: 65px;
+  }
+  .benefitsTitle {
+    font-size: 48px;
+    max-width: 430px;
+    margin-bottom: 40px;
+  }
+
+  .benefitsList {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: stretch;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .benefitsList::before,
+  .benefitsList::after {
+    content: "";
+    position: absolute;
+    background-color: #b1cfeb;
+  }
+
+  .benefitsList::before {
+    /* Вертикальна лінія по центру */
+    top: var(--benefitsAnimationLineStart);
+    bottom: var(--benefitsAnimationLineEnd);
+    left: 50%;
+    width: 1px;
+    transform: translateX(-50%);
+  }
+
+  .benefitsList::after {
+    /* Горизонтальна лінія по центру */
+    left: var(--benefitsAnimationLineEnd);
+    right: 0;
+    top: 50%;
+    height: 1px;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefitsWrapper {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .benefitsTitle {
+    font-size: 75px;
+    max-width: 850px;
+    line-height: 100px;
+    margin-bottom: 62px;
+  }
+  .benefitsList {
+    justify-content: space-between;
+  }
+  .benefitItem {
+    max-width: 519px;
+    width: 100%;
+  }
+
+  .benefitTextWrapper {
+    max-width: 430px;
+  }
+}
+
+@media (min-width: 1550px) {
+  .benefitsWrapper {
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+  .benefitsTitle {
+    font-size: 96px;
+  }
+}
