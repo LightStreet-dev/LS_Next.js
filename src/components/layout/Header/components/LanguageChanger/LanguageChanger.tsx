@@ -1,8 +1,7 @@
-
-import type { StylesConfig, OptionProps } from "react-select";
-import type { ComponentType } from "react";
-import type { Props } from "react-select";
-import dynamic from "next/dynamic";
+// LanguageChanger.tsx
+"use client";
+import ReactSelect from "react-select";
+import type { StylesConfig } from "react-select";
 import { useTranslation } from "react-i18next";
 import s from "./LanguageChanger.module.css";
 
@@ -10,10 +9,6 @@ interface OptionType {
   value: string;
   label: string;
 }
-
-const Select = dynamic(() => import("react-select"), {
-  ssr: false,
-}) as ComponentType<Props<OptionType, false>>;
 
 const customStyles: StylesConfig<OptionType, false> = {
   menu: (provided) => ({
@@ -28,17 +23,16 @@ const customStyles: StylesConfig<OptionType, false> = {
   }),
   input: (provided) => ({
     ...provided,
-    width: "50px", // Встановіть бажану ширину
+    width: "50px",
     border: "none",
     padding: "0",
   }),
-  option: (provided, state: OptionProps<OptionType, false>) => ({
+  option: (provided, state) => ({
     ...provided,
     width: "50px",
     color: "white",
     padding: "10px 0",
     cursor: "pointer",
-
     ":active": {
       backgroundColor: "#4c5eafff",
     },
@@ -48,19 +42,15 @@ const customStyles: StylesConfig<OptionType, false> = {
   }),
   container: (provided) => ({
     ...provided,
-
     border: "none",
     padding: "0",
-    margin:'0'
+    margin: "0",
   }),
   control: (provided) => ({
     ...provided,
     backgroundColor: "transparent",
-    
-   
     border: "none",
     minHeight: "30px",
-  
     width: "70px",
     boxShadow: "none",
   }),
@@ -70,13 +60,13 @@ const customStyles: StylesConfig<OptionType, false> = {
   singleValue: (provided) => ({
     ...provided,
     border: "none",
-    color: "--mainContentColor",
+    color: "var(--mainContentColor)",
   }),
   dropdownIndicator: (provided, state) => ({
     ...provided,
     padding: "0",
     color: state.selectProps.menuIsOpen ? "var(--mainContentColor)" : "gray",
-    transition: "transform 0.5s ease, color 0.3s ease", // додаємо плавний перехід для color
+    transition: "transform 0.5s ease, color 0.3s ease",
     transform: state.selectProps.menuIsOpen ? "rotate(180deg)" : "rotate(0deg)",
     "&:hover": {
       color: "var(--mainContentColor)",
@@ -84,32 +74,30 @@ const customStyles: StylesConfig<OptionType, false> = {
   }),
 };
 
+const languageOptions: OptionType[] = [
+  { value: "en", label: "EN" },
+  { value: "uk", label: "UA" },
+  { value: "pl", label: "PL" },
+];
+
 const LanguageChanger: React.FC = () => {
   const { i18n } = useTranslation();
 
-  const languageOptions: OptionType[] = [
-    { value: 'en', label: 'EN' },
-    { value: 'uk', label: 'UA' },
-    { value: 'pl', label: 'PL' },
-  ];
-
-  const currentLang = i18n.resolvedLanguage || i18n.language || 'en';
-
+  const currentLang = i18n.resolvedLanguage || i18n.language || "en";
   const currentOption =
-    languageOptions.find(opt => opt.value === currentLang)
-    || languageOptions[0];
+    languageOptions.find((opt) => opt.value === currentLang) ||
+    languageOptions[0];
 
   const handleLanguageChange = (opt: OptionType) => {
     i18n.changeLanguage(opt.value);
-
     const url = new URL(window.location.href);
-    url.searchParams.set('lng', opt.value);
-    window.history.replaceState({}, '', url.toString());
+    url.searchParams.set("lng", opt.value);
+    window.history.replaceState({}, "", url.toString());
   };
 
   return (
     <div className={s.lngSwitcher}>
-      <Select
+      <ReactSelect<OptionType, false>
         styles={customStyles}
         value={currentOption}
         onChange={(opt) => opt && handleLanguageChange(opt)}
@@ -119,7 +107,5 @@ const LanguageChanger: React.FC = () => {
     </div>
   );
 };
-
-
 
 export default LanguageChanger;
